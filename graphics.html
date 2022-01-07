@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+</head>
+<body>
+    <!-- <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"> -->
+
+    <canvas id="mycanvas" width="400" height="600"  style="border: 1px solid black;">
+
+
+    <script>
+        var can = document.getElementById("mycanvas");
+        var ctx=can.getContext('2d');
+        // draw diagonal line
+        // ctx.moveTo(0,0);
+        // ctx.lineTo(200,100);
+        // ctx.stroke();  
+        
+        // create Reactangle
+
+        // ctx.fillRect(40,40,80,80);     
+        
+        // ping pong game
+        // const paddlewidth="50";
+        // const paddleheight="10";
+        // const width="400";
+        // const height="600";
+
+        // can.width=width;
+        // can.height=height;
+        // ctx.fillStyle="black";
+        // ctx.fillRect(0,0,400,600);
+
+        // // paddle top
+        // ctx.fillStyle="white";
+        // ctx.fillRect(175,10,paddlewidth,paddleheight);
+        // // paddle bottom
+        //  ctx.fillStyle="white";
+        // ctx.fillRect(175,height-20,paddlewidth,paddleheight);
+
+        // // center line
+        // ctx.beginPath();
+        // ctx.moveTo(0,height / 2);
+        // ctx.lineTO(width,height / 2);
+        // ctx.strokeStyle = "white";
+        // ctx.stroke();
+
+// -------------------circle--------------------------------
+
+// ctx.beginPath();
+// ctx.arc(95,50,40,0, 2 * Math.PI);
+// ctx.stroke();
+
+// ------------------------text -------------------------------
+
+// ctx.font="60px Arial";
+// ctx.fillText("hello Sumit",100,100);
+// ctx.stroke();
+
+// ------------------------create gradient------------------------------
+var grd=ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+//fill with gradient 
+ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80);
+
+// -----------------------------draw circular gradient------------------------------
+var grd=ctx.createLinearGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+//fill with gradient 
+ctx.fillStyle=grd;
+ctx.fillRect(10,10,150,80);;
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        th ,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+        table{
+            border-spacing: 30px;
+        }
+        tr:nth-child(2){
+            background-color: red;
+        }
+        tr:hover{
+            color: yellow;
+            transition: cubic-bezier(0.23, 1, 0.320, 1);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>monthly saving</caption>
+        <tr>
+            <th>company</th>
+            <th>contact</th>
+            <th>country</th>
+        </tr>
+        <tr>
+            <td>assertIt</td>
+            <td>8778667878</td>
+            <td>india</td>
+        </tr>
+        <tr>
+            <td>allsoft solution</td>
+            <td>45325345345</td>
+            <td>U.S</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <table style="border: 1px solid ;">
+        <tr >
+            <th colspan="2">company</th>
+            <th>contact</th>
+            <th>country</th>
+        </tr>
+        <tr>
+            <td>assertIt</td>
+            <td>8778667878</td>
+            <td>india</td>
+        </tr>
+        <tr>
+            <td>allsoft solution</td>
+            <td>45325345345</td>
+            <td>U.S</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <!-- form create with submit button  -->
+    <form action="https://www.youtube.com/" autocomplete="on">
+        <Label for="name">FirstName:</Label>
+        <input type="text" placeholder="FirstName"><br>
+        <br>
+
+        <Label for="name">LastName:</Label>
+        <input type="text" placeholder="LastName">
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+<!-- for Radio button -->
+<p>choose Favourite Language</p>
+    <form >
+        <input type="radio" id="html" value="html" name="fav_lang">
+        <label for="html">HTML</label>
+        <br>
+        <input type="radio" id="css" value="css" name="fav_lang">
+        <label for="css">CSS</label>
+        <br>
+        <input type="radio" id="js" value="js" name="fav_lang">
+        <label for="js">JAVASCRIPT</label>
+        <br>
+
+        <br>
+        <br>
+
+        <label for="cars">choose a cars🚌 :</label>
+
+        <select name="cars" id="cars">
+            <option value="volvo">volvo</option>
+            <option value="swift">Swift</option>
+            <option value="alto">Alto</option>
+            <option value="vitara breeza">Vitara Breeza</option>
+        </select>
+    </form>
+
+<!-- for checkbox button -->
+    <form>
+        <input type="checkbox" id="car" name="vehicle1">
+        <label for="car">this is my  car </label>
+        <br>
+        <input type="checkbox" id="bus" name="vehicle2">
+        <label for="bus">this is my  bus </label>
+        <br>
+        <input type="checkbox" id="ship" name="vehicle3">
+        <label for="ship">this is my  ship </label>
+        <br>
+        <input type="checkbox" id="bike" name="vehicle4">
+        <label for="bike">this is my  bike </label>
+        <br>
+    </form>
+
+    <textarea name="message" id="" cols="30" rows="10"> this is first message</textarea>
+    
+    <form action="">
+
+        <fieldset>
+            <legend>personal information</legend>
+            <label for="Firstname">FirstName</label>
+            <input type="text" id="name" placeholder="username"> 
+            <br>
+            <br>
+            <label for="Secondname">SecondName</label>
+            <input type="text" id="name" placeholder="Secondname"> 
+            <br>
+            <br>
+            <input type="submit">
+
+        </fieldset>
+
+    </form>
+<br><br>
+    <!-- html input type -->
+    <form action="">
+        <Label for="name">UserName:</Label>
+        <input type="text" placeholder="UserName" disabled><br>
+        <br>
+
+        <Label for="name">Password</Label>
+        <input type="password" placeholder="password">
+        <br>
+        <br>
+       
+
+        <label for="date">Date:</label>
+        <input type="date"> 
+        <br>
+        <label for="datetime">DateTime Local:</label>
+        <input type="datetime-local">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="chetu@gmail.com">
+<br><br>
+        <label for="file">Select a file:</label>
+        <input type="file">
+<br><br>
+
+        <input type="submit">
+        <input type="reset">
+       </form>
+</body>
+</html>
