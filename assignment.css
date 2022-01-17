@@ -213,7 +213,7 @@
   width: 210px;
   height: 180px;
   margin: auto;
-  transition: all 1s ease-in-out;
+  
  }
  #menu_card .menu1:hover{
    transform:scale(1.1);
@@ -231,6 +231,155 @@
   font-size: 2.3rem;
   padding: 12px;
  }
+
+ /* review and view */
+
+
+.card{
+  background:linear-gradient(135deg, blue,red,transparent);
+  padding: 1rem 1.5rem 1rem ;
+  width: 32rem;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+  margin: 1rem 2rem;
+  display: flex; 
+ flex-direction: column;
+  word-wrap: break-word; 
+ flex-wrap: wrap; 
+  
+ float: left; 
+width: 72%;
+
+
+  
+}
+.card p{
+  font-size: 1.3rem;
+}
+
+ #review{
+  margin: 30px 40px 50px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  
+
+  
+
+ } 
+
+
+/* heading h3 */
+.heading h3{
+   font-size: 29px;
+   font-weight: bold;
+}
+
+  .textarea1{
+  
+      border: 2px solid black;    padding: 30px;
+      
+      border-radius: 10px;
+      background-color: blue;
+      width: 50%;
+      text-align: center;
+      margin-left: 25%; 
+
+  }
+
+  #addtxt{
+      margin-top: 32px;
+      border: 2px solid black;
+      padding: 5px;
+      border-radius: 16px;
+      border-color:red;
+
+
+  }
+
+  /* review and views */
+  #notes{
+       display: flex;
+       grid-column:inherit;
+       
+       font-size: 26px ;
+       font-family: sans-serif;
+       margin: 4px;
+       max-width: 450px;
+       position: relative;
+       float: right;
+       width: 25%;
+       
+      
+       
+  }
+  #notes::before{
+    background: linear-gradient(135deg,blue,yellow);
+  }
+
+  /* submit button */
+
+  #addbtn {
+      padding: 6px 20px;
+      border: 2px solid white;
+      background-color: brown;
+      color: white;
+      margin: 17px;
+      border-radius: 10px;
+      transition: all 1s ease-in-out;
+    }
+    #addbtn:hover {
+      color: blue;
+      background-color: white;
+      transform:scale(2);
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      border: none;
+      padding: 3px;
+    }
+    /* 
+    delete button */
+
+    .delbtn {
+      padding: 6px 20px;
+      border: 2px solid white;
+      background-color: brown;
+      color: white;
+      margin: 17px;
+      border-radius: 10px;
+      transition: all 1s ease-in-out;
+    }
+    .delbtn:hover {
+      color: blue;
+      background-color: white;
+      transform:scale(2);
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      border: none;
+      padding: 3px;
+    }
+
+ 
+     .heading img {
+      margin: 10px 9px;
+      height: 73px;
+      transition: all 1s ease-in-out;
+    }
+
+     .heading img:hover{
+     
+          transform: scale(1.4) ;
+          cursor: pointer;
+          filter: invert(.9);
+        
+    }
+
+   
 
  /* contact */
 
@@ -250,7 +399,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 34px;
+  padding-bottom: 60px;
 }
 #contact-box input,
 #contact-box textarea{
@@ -271,12 +420,15 @@
    }
    .contacth1{
      text-align: center;
+     font-size: 34px;
    }
 
 /* submit button */
    .Submit{
     font-family: "Bree Serif", serif;  display: block;
-    margin: auto;
+    margin-top: 34px;
+    margin-left: 100px;
+    padding:5px;
     text-align: center;
     justify-content: center;
     border-radius: 6px;
@@ -336,6 +488,21 @@
     .menuh1{
       font-size: 26px;
     }
-   
+/* review and view */
+.textarea{
+  width: 88%;
+  margin-left: 23px;
+}
+    textarea#addtxt{
+      width: 100%;
+      margin: 3px;
+    }
+   #notes{
+     flex-direction: column;
+     
+   }
+   .card{
+     width: 258%;
+   }
     
 }
