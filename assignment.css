@@ -213,7 +213,7 @@
   width: 210px;
   height: 180px;
   margin: auto;
-  
+  /* transition: all 1s ease-in-out; */
  }
  #menu_card .menu1:hover{
    transform:scale(1.1);
@@ -278,7 +278,9 @@ width: 72%;
 
   .textarea1{
   
-      border: 2px solid black;    padding: 30px;
+      border: 2px solid black;
+      /* background: url(review2.jpg ) no-repeat center center/cover; */
+      padding: 30px;
       
       border-radius: 10px;
       background-color: blue;
@@ -302,7 +304,8 @@ width: 72%;
   #notes{
        display: flex;
        grid-column:inherit;
-       
+       /* flex-direction: column; */
+       /* flex-wrap: wrap; */
        font-size: 26px ;
        font-family: sans-serif;
        margin: 4px;
@@ -332,7 +335,7 @@ width: 72%;
     #addbtn:hover {
       color: blue;
       background-color: white;
-      transform:scale(2);
+      /* transform:scale(2); */
       cursor: pointer;
       border-radius: 10px;
       font-size: 12px;
@@ -355,7 +358,7 @@ width: 72%;
     .delbtn:hover {
       color: blue;
       background-color: white;
-      transform:scale(2);
+      /* transform:scale(2); */
       cursor: pointer;
       border-radius: 10px;
       font-size: 12px;
@@ -506,3 +509,18 @@ width: 72%;
    }
     
 }
+@media  (max-width:1120px){
+ #menu_card{
+   flex-wrap: wrap;
+   
+    flex-wrap: wrap;
+    width: 995px;
+    margin: 57px;
+}
+ #menu_card .menu1{
+  margin: 6px 14px;
+
+ }
+
+}
+

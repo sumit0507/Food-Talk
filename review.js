@@ -13,8 +13,8 @@ addbtn.addEventListener("click", function (e) {
     else {
         noteobj = JSON.parse(notes);
     }
-
-    noteobj.push(addtxt.value);
+noteobj.splice(1,0,addtxt.value);
+    // noteobj.push(addtxt.value);
     localStorage.setItem("notes", JSON.stringify(noteobj));
     addtxt.value = "";
     console.log(noteobj);
@@ -35,7 +35,7 @@ function shownotes() {
     let html = "";
     noteobj.forEach(function (element, index) {
 
-        html += `
+        html +=`
         
         <div class="card">
             <h5 class="card_title>Review ${index + 1}</h5>
@@ -68,3 +68,44 @@ function deletecomment(index) {
     localStorage.setItem("notes", JSON.stringify(noteobj));
     shownotes();
 }
+
+// contact us
+document.querySelector('.contact-form').addEventListener("submit",submitForm);
+function submitForm(e){
+    e.preventDefault();
+    let name = document.querySelector('.name').value;
+    let email = document.querySelector('.email').value;
+    let mobile = document.querySelector('.phone').value;
+    let message = document.querySelector(".message").value;
+    document.querySelector(".contact-form").reset();
+    sendEmail(name,email,mobile,message);
+    console.log(name,email,mobile,message);
+}
+
+
+
+
+
+
+function sendEmail(name,email,mobile ,message) {
+    
+    
+       
+
+       
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "sumit8750048601@gmail.com",
+      Password: "cnowooywvxmmhwgs",
+      To: `${email}`,
+      From: "sumit8750048601@gmail.com",
+      Subject: "new mail form javascript"+name,
+      Body:` Name:${name} <br/> Email:${email} <br/> Mobile:${mobile} <br/> Message:${message}`,
+    })
+      .then((message)=> alert("mail sent succesfully"))
+          
+              
+        
+       
+} 
+
